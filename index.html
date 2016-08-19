@@ -1,0 +1,240 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Support Ethiopia Reads</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/scss/style.css">
+        <!-- JS -->
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- NAV BACKGROUND JS -->    
+      <script type="text/javascript">
+
+            $(function() {
+                var header = $(".top-bar");
+                $(window).scroll(function() {    
+                    var scroll = $(window).scrollTop();
+                
+                    if (scroll >= 622) {
+                        header.addClass("light");
+                        
+                    } else {
+                        header.removeClass("light").addClass('top-bar');
+                    }
+                });
+            });
+
+            $(window).scroll(function(){
+              $(".hero").css("opacity", 1 - $(window).scrollTop() / 750);
+            });
+
+      </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
+
+  </head>
+  <body>
+
+
+<!-- NAVIGATION START -->
+    <div class="row top-bar">
+        <a href="#top"><h4><span>Support</span> Ethiopia Reads</h4></a>
+        <ul class="menu align-right">
+          <li><a href="#education">About</a></li>
+          <li class="bold"><a href="#donate">Donate</a></li>
+        </ul>
+    </div>
+
+
+<!-- HERO START -->
+    <div class="row hero" id="top">
+      <div id="hero-text">
+        <div class="line"></div>
+        <h1>Support</h1>
+        <div class="line"></div>
+        <h4>Ethiopia Reads</h4>
+        <!-- <img src="img/logo2.png" style="margin-right: 20%; margin-left: 20%; width: 60%; "> -->
+      </div>
+    </div>
+
+
+
+<!-- EDUCATION START -->
+    <div class="row large-12" id="education">
+      <div class="small-1 columns"></div>
+      <!-- margin-left -->
+
+        <div class="small-4 columns event">
+          <h4>The Event</h4>
+          <div class="line"></div>
+          <p>On Saturday, November 22nd, coffee shops and local business across Kansas will come together to help raise funds for the organization Support Ethiopia Reads.</p>
+          <p>Ethiopia is a country that produces the best coffee in the world, through our support and kind donations we can help to positively impact the lives of their school children.</p>
+        </div>
+
+        <div class="small-6 columns about">
+          <h4>About Ethiopia Reads</h4>
+          <div class="line"></div>
+          <p>Ethiopia Reads is a tax-exempt 501(c)3 organization founded in 1998 with the goal of providing much needed in-language books to the children of Ethiopia. The vision quickly grew and by 2012, Ethiopia Reads had planted over 40 libraries across Ethiopia and had kicked off an unmatched librarian and educator peer mentoring and training program.</p>
+          <p>Today, Ethiopia Reads is a new organization with a focus on schools, libraries, young athlete education and mentorship and educator training. We move forward with a focus toward working within Ethiopian communities and partnering with those communities to cultivate minds for a stronger tomorrow.</p>
+          <p>To date, Ethiopia Reads has served over 130,000 children.</p>
+        </div>
+
+      <!-- margin-right -->
+      <div class="small-1 columns"></div>
+    </div>
+
+
+
+<!-- MISSION START -->
+    <div class="row" id="mission">
+      <div class="small-1"></div>
+      <!-- margin-left -->
+        
+        <div class="small-4" id="mission-text">
+          <h4>The Event</h4>
+          <div class="line"></div>
+          <p>On Saturday, November 22nd, coffee shops and local business across Kansas will come together to help raise funds for the organization Support Ethiopia Reads.</p>
+          <p>Ethiopia is a country that produces the best coffee in the world, through our support and kind donations we can help to positively impact the lives of their school children.</p>
+        </div>
+        <div class="small-1"></div>
+        <div class="small-6" id="mission-image">
+        </div>
+    </div>
+
+
+
+<!-- VISION START -->
+    <div class="row" id="vision">
+
+
+        <div class="small-7" id="vision-image">
+        </div>
+        
+        <div class="small-1" style="background-color: #F4F4F4;"></div>
+        <!-- margin-left -->
+
+        <div class="small-3" style="background-color: #F4F4F4;" id="vision-text">
+            <h4>Vision</h4>
+            <div class="line"></div>
+            <p>Ethiopia Reads empowers and strengthens communities through the art of learning and the science of teaching. We believe that providing quality schools, books and learning initiatives that engage both the creative and logical mind will lead to a more resourceful generation of leaders in Ethiopia.</p>
+        </div>
+
+        <div class="small-1" style="background-color: #F4F4F4;"></div>
+
+    </div>
+
+
+
+<!-- DONATE START -->
+    <div class="row" id="donate">
+    <div class="small-3"></div>
+        <div class="small-6" id="donate-text">
+          <h4>Donate</h4>
+          <div class="line"></div>
+          <ul>
+            <li><span>$2</span> = Funds one Ethiopian language story book for a child. All are given for free to Ethiopian children</li>
+            <li><span>$5</span> = Can buy an Amharic-English dictionary for Ethiopian children</li>
+            <li><span>$21</span> = School sponsorship</li>
+            <li><span>$500</span> = Can provide an Ethiopian educator with a scholarship for library skills training</li>
+            <li><span>$750</span> = Can purchase enough Ethiopian language story books and reference material for one library</li>
+            <li><span>$3,500</span> = Can provide one year’s salary for an Ethiopian library manager</li>
+            <li><span>$15,000</span> = Can plan a fully-functional library with hundreds of books</li>
+          </ul>
+          <h6>If you are interested in other ways you can help, please click the link below</h6>
+          <ul id="button">
+            <li><a href="http://www.ethiopiareads.org/donate" target="_blank">Donate</a></li>
+            <li><a href="http://www.ethiopiareads.org/fundraising/" target="_blank">How You Can Help</a></li>
+          </ul>
+        </div>
+    <div class="small-3"></div>    
+    </div>
+
+
+
+<!-- PARTICIPANTS START -->
+    <div class="row" id="participants">
+    <div class="small-1"></div>
+        <div class="small-10" id="participants-text">
+          <h4>Thank you to everyone who made this event possible</h4>
+          <div class="line"></div>
+          <ul>
+            <li><a href="#"><span>Craft Coffee Parlor</span><br>McPherson, KS</a></li>
+            <li><a href="#"><span>Arrow Coffee</span><br>Manhattan, KS</a></li>
+            <li><a href="#"><span>Metropolitan Cafe</span><br>Hutchinson, KS</a></li>
+            <li><a href="#"><span>The White Peacock</span><br>Lindsborg, KS</a></li>
+            <li><a href="#"><span>Ad Astra Books &amp; Coffee</span><br>Salina, KS</a></li>
+            <li><a href="#"><span>Reverie Coffee Roasters</span><br>Wichita, KS</a></li>
+            <li><a href="#"><span>Broadway Market Coffee Shop</span><br>Sterling, KS</a></li>
+            <li><a href="#"><span>Norm's Coffee Bar</span><br>Newton, KS</a></li>
+            <li><a href="#"><span>Mojo's Coffee Bar</span><br>Newton, KS</a></li>
+          </ul>
+          <h5><a href="#">Facebook</a></h5>
+        </div>
+    <div class="small-1"></div>    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

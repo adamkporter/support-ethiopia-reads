@@ -1,0 +1,679 @@
+$green: #148C11;
+$light: #FFFFFF;
+$dark: #4A4A4A;
+
+@mixin tranisiton {
+	webkit-transition: all ease-in-out .2s;
+	-m-transition: all ease-in-out .2s;
+	transition: all ease-in-out .2s;
+}
+
+h4 {
+	/* About Ethiopia Reads: */
+	font-family: RobotoSlab-Bold;
+	font-size: 24px;
+	color: #148C11;
+	letter-spacing: 0px;
+	line-height: 27px;
+}
+
+.line {
+	background-color: $green;
+	height: 3px;
+	width: 30px;
+	margin: 15px 0px 30px;
+	border-radius: 10px;
+}
+
+p {
+	/* Ethiopia Reads is a: */
+	font-family: RobotoSlab-Regular;
+	font-size: 14px;
+	color: #4A4A4A;
+	letter-spacing: 0px;
+	line-height: 26px;
+}
+
+
+.row {
+	max-width: 100%;
+}
+
+body {
+	height: 2000px;
+}
+
+.top-bar {
+	position: fixed;
+	width: 100%;
+	font-family: 'Roboto Slab', serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: transparent;
+	border-bottom: 2px solid $light;
+	z-index: 99;
+	&.light {
+		background-color: rgba(255,255,255,.95);
+		border-bottom: 2px solid $green;
+		box-shadow: 0px 2px 8px rgba(0,0,0,.1);
+		h4 {
+			color: $green;
+			padding: 0px;
+			font-size: 16px;
+			@include tranisiton;
+			&:hover {
+				opacity: .8;
+				@include tranisiton;
+			}
+		}
+		.bold {
+			background-color: $green;
+			background-image: linear-gradient(-138deg, #5BB50C 0%, #148C11 100%);
+			padding: 15px;
+			a {
+				color: $light;
+			}
+		}
+		li a {
+			color: $green;
+			padding: 10px;
+		}
+	}
+	h4 {
+		float: left;
+		margin-top: 5px;
+		margin-left: 30px;
+		padding: 15px;
+		font-family: 'Roboto Slab', serif;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 20px;
+		color: $light;
+		letter-spacing: 4.19px;
+		line-height: 27px;
+		@include tranisiton;
+		span {
+			font-weight: 900;
+		}
+		&:hover {
+			opacity: .8;
+			@include tranisiton;
+		}
+	}
+	ul {
+		width: 600px;
+		background-color: transparent;
+		li a {
+			color: $light;
+			padding: 15px;
+			@include tranisiton;
+			&:hover {
+				@include tranisiton;
+				opacity: .6;
+			}
+		}
+		.bold {
+			background-color: $light;
+			padding: 15px;
+			@include tranisiton;
+			a {
+				color: $green;
+				@include tranisiton;
+				&:hover {
+					@include tranisiton;
+				}
+			}
+			&:hover {
+				box-shadow: inset -1px 4px 4px rgba(0,0,0,.3);
+				@include tranisiton;
+			}
+		}
+		li:first-child {
+			padding: 15px;
+		    @include tranisiton;
+			cursor: pointer;
+		}
+		li:hover {
+			@include tranisiton;
+			cursor: pointer;
+		}
+	}
+}
+
+
+.hero {
+	height: 675px;
+	background-color: $green;
+	background-image: url('../../img/hero.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	padding: 200px;
+	box-sizing: border-box;
+	#hero-text {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 800px;
+        height: 675px;
+        position:absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -120px;
+        margin-left: -400px;
+/*        img {
+        	mix-blend-mode: multiply;
+        	width: 50%;
+        	display: block;
+        	margin-right: 25%;
+        	margin-right: 25%;
+        	 -webkit-filter: grayscale(100%);
+        	 opacity: .6;
+        }*/
+		h4 {
+			text-align: center;
+			font-family: RobotoSlab-Regular;
+			font-size: 30px;
+			color: #FFFFFF;
+			letter-spacing: 10px;
+			text-transform: uppercase;
+			padding: 22px 0px;
+		}
+		h1 {
+			text-align: center;
+			font-family: RobotoSlab-Bold;
+			font-size: 60px;
+			padding-top: 10px;
+			color: #FFFFFF;
+			letter-spacing: 25px;
+			text-transform: uppercase;
+		}
+		.line {
+			background-color: $light;
+			height: 3px;
+			width: 480px;
+			border-radius: 10px;
+			margin: 0px;
+			padding: 0px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+#education {
+	padding: 120px 0px;
+}
+
+
+#mission {
+	background-image: linear-gradient(-138deg, #5BB50C 0%, #148C11 100%);
+	/*padding: 80px 0px;*/
+	#mission-text {
+		padding: 70px 0px;
+		h4 {
+			color: $light;
+		}
+		p {
+			color: $light;
+			opacity: .9;
+		}
+		.line {
+			background-color: $light;
+		}
+	}
+	#mission-image {
+		background: 	url('../../img/rec.png') no-repeat bottom left,
+						url('../../img/mission-img.jpg') no-repeat /*fixed*/ center right;
+		/*background-position: bottom left;*/
+
+		/*background: #ffffff url("img_tree.png") no-repeat right top;*/
+		/*height: 450px;*/
+	}
+}
+
+
+#vision {
+	background-image: linear-gradient(-138deg, #5BB50C 0%, #148C11 100%);
+	/*padding: 80px 0px;*/
+	#vision-text {
+		padding: 70px 0px;
+		h4 {
+			color: $green;
+		}
+		p {
+			color: $dark;
+			opacity: .9;
+		}
+		.line {
+			background-color: $green;
+		}
+	}
+	#vision-image {
+		background-image: url('../../img/vision-img.jpg');
+		background-size: cover;
+		/*height: 450px;*/
+	}
+}
+
+#donate {
+	padding: 120px 0px;
+	h4 {
+		text-align: center;
+	}
+	.line {
+		background-color: $green;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	ul {
+		font-family: RobotoSlab-Regular;
+		font-size: 16px;
+		color: $dark;
+		letter-spacing: 0px;
+		line-height: 34px;
+		list-style: none;
+		list-style-type: none;
+    	list-style-position: inside;
+    	padding: 10px 0 10px 20px;
+    	/*text-indent: -1em;*/
+    	li {
+    		margin-bottom: 15px;
+    		line-height: 1.8;
+    	}
+		span {
+			color: $green;
+			font-family: RobotoSlab-Bold;
+		}
+	}
+	h6 {
+		text-align: center;
+		/* If you are intereste: */
+		font-family: RobotoSlab-Bold;
+		font-size: 16px;
+		color: #148C11;
+		line-height: 32px;
+
+	}
+	#button {
+		list-style: none;
+		text-align: center;
+		margin-top: 30px;
+		li {
+			display: inline-block;
+			text-align: center;
+			padding: 10px 20px;
+			margin: 0px 10px;
+			border-radius: 4px;
+			background-image: linear-gradient(-138deg, #5BB50C 0%, #148C11 100%);
+			@include tranisiton;
+			a {
+				color: $light;
+			}
+			&:hover {
+				box-shadow: inset -1px 4px 4px rgba(0,0,0,.3);
+				@include tranisiton;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+#participants {
+	padding: 120px 0px 42px 0px;
+	background-image: linear-gradient(-138deg, #5BB50C 0%, #148C11 100%);
+	h4 {
+		text-align: center;
+		color: $light;
+		padding-bottom: 20px;
+		line-height: 1.7;
+	}
+	.line {
+		background-color: $light;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 80px;
+	}
+	ul {
+		list-style: none;
+		li {
+			padding: 30px 0px;
+			border-bottom: 1px solid $light;
+			text-align: center;
+			/* Craft Coffee Parlor: */
+			font-family: RobotoSlab-light;
+			font-size: 16px;
+			color: #FFFFFF;
+			line-height: 28px;
+			text-transform: uppercase;
+			letter-spacing: 3.5px;
+			@include tranisiton;
+			&:first-child {
+				border-top: 1px solid $light;
+			}
+			span {
+				/* Craft Coffee Parlor: */
+				font-family: RobotoSlab-Bold;
+				font-size: 24px;
+				color: #FFFFFF;
+				line-height: 32px;
+				text-transform: capitalize;
+				letter-spacing: 0px;
+			}
+			a {
+				color: $light;
+			}
+			&:hover {
+				opacity: .5;
+				@include tranisiton;
+				cursor: pointer;
+			}
+		}
+	}
+	h5 {
+		opacity: 0.6;
+		font-family: RobotoSlab-Bold;
+		font-size: 14px;
+		line-height: 32px;
+		text-align: center;
+		margin-top: 50px;
+		a {
+			color: $light;
+			opacity: .6;
+			@include tranisiton;
+			&:hover {
+				opacity: 1;
+				@include tranisiton;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+	body {
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+
+  .top-bar {
+  	text-align: center;
+  	border-bottom: 2px solid $green;
+  	background-color: rgba(255,255,255,.9);
+  	&.light {
+  		h4 {
+  			padding: 10px;
+  			color: $green;
+  		}
+  		li {
+  			background-image: linear-gradient(-138deg, #5BB50C 0%, #148C11 100%);
+  			&:hover {
+  				box-shadow: 0px 2px 8px rgba(0,0,0,.1);
+  			}
+  			a {
+  				color: $light;
+  			}	
+  		}
+  	}
+  	h4 {
+	    text-align: center;
+	    font-size: 16px;
+	    float: none;
+	    display: block;
+  	}
+  	ul {
+  		float: none;
+  		text-align: center;
+  		border-top: 2px solid $green;
+  	}
+  	.bold {
+		padding: 15px;
+		li:hover {
+			box-shadow: none;
+		}
+		a {
+			color: $light;
+			text-align: center;
+		}
+	}
+	li {
+		width: 50%;
+		padding: 0px;
+		text-align: center;
+		margin-right: 0px;
+		background-color: rgba(255,255,255,1);
+		color: $green;
+		&:first-child {
+			border-right: 2px solid $green;
+		}
+		&:hover {
+			box-shadow: none;
+		}
+		a {
+			color: $green;
+			/*padding: 10px;*/
+			text-align: center;
+			width: 50%;
+		}
+	}
+  }
+
+  .top-bar ul li a {
+  	color: $green;
+  }
+
+  .top-bar h4 {
+  	color: $green;
+  }
+
+  .hero {
+	height: 675px;
+	background-color: $green;
+	background-image: url('../../img/hero.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	padding: 200px;
+	box-sizing: border-box;
+	#hero-text {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 800px;
+        height: 675px;
+        position:absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -120px;
+        margin-left: -400px;
+/*        img {
+        	mix-blend-mode: multiply;
+        	width: 50%;
+        	display: block;
+        	margin-right: 25%;
+        	margin-right: 25%;
+        	 -webkit-filter: grayscale(100%);
+        	 opacity: .6;
+        }*/
+		h4 {
+			text-align: center;
+			font-family: RobotoSlab-Regular;
+			font-size: 18px;
+			color: #FFFFFF;
+			letter-spacing: 10px;
+			text-transform: uppercase;
+			padding: 15px 0px;
+		}
+		h1 {
+			text-align: center;
+			font-family: RobotoSlab-Bold;
+			font-size: 30px;
+			padding-top: 10px;
+			color: #FFFFFF;
+			letter-spacing: 25px;
+			margin-left: 22px;
+			text-transform: uppercase;
+		}
+		.line {
+			background-color: $light;
+			height: 3px;
+			width: 40%;
+			border-radius: 10px;
+			margin: 0px;
+			padding: 0px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+
+	.small-1, .small-4, .small-6, .small-3, .small-10 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.event, .about {
+		margin-bottom: 50px;
+	}
+	#education {
+		padding: 160px 0px 0px 0px;
+		box-sizing: border-box;
+	}
+
+
+	#mission {
+		padding: initial 0px 0px 0px;
+		#mission-image {
+			display: none;
+		}
+		#mission-text {
+			padding-left: 15px;
+			padding-right: 15px;
+		}	
+	}
+
+
+	#vision {
+		padding: initial 0px 0px 0px;
+		#vision-image {
+			display: none;
+		}
+		#vision-text {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+
+	#donate {
+		padding: 160px 0px 60px 0px;	
+		.small-3 {
+			display: none;
+		}
+		#donate-text {
+			padding-right: 15px;
+			padding-left: 15px;
+			ul {
+				padding: 0px 0px 0px 0px;
+			}
+			#button {
+				display: block;
+				margin: 30px 0px 0px 0px;
+				li {
+					width: 100%;
+					margin: 10px 0px 0px 0px;
+				}
+			}
+		}
+
+	}
+
+
+	#participants {
+		padding: 60px 15px 40px 15px;
+		margin: 0px;
+		#participants-text {
+			padding-right: 0px;
+			padding-left: 0px;
+			ul {
+				padding: 0px;
+				margin: 0px;
+			}			
+		}
+		li a span {
+			font-size: 18px;
+		}
+		li a {
+			font-size: 12px;
+		}
+	}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/*ul {
+		font-family: RobotoSlab-Regular;
+		font-size: 16px;
+		color: $dark;
+		letter-spacing: 0px;
+		line-height: 34px;
+		list-style: none;
+		list-style-type: none;
+    	list-style-position: inside;
+    	padding: 10px 0 10px 20px;*/
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
